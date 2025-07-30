@@ -1,0 +1,48 @@
+*{
+    margin:  0%;
+    padding: 0%;
+}
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    background-color: #DEE2E6;
+    justify-items: center;
+    align-content: center;
+}
+.imagen{
+    width: 95%;
+    border-radius: 1.5rem;
+}
+.botones{
+    width: 60%;
+}
+.botones button{
+    padding: 1rem;
+    background-color: rgb(253, 52, 119);
+    border-radius: 1rem;
+    border: none;
+    color: white;
+    font-family: cursive;
+}
+.botones button:hover {
+    background-color: rgb(190, 8, 84); 
+    cursor: pointer;
+}
+.blanco-y-negro {
+  filter: grayscale(100%);
+  transition: all 0.4s ease;
+}
+.desenfocar {
+  filter: blur(3px);
+  transition: all 0.4s ease;
+}
+.zoom-rotar {
+  transform: scale(1.1) rotate(3deg);
+  transition: all 0.4s ease;
+}
+.activo {
+  background-color: #c00b0b;
+  box-shadow: 0 0 20px #dd1964;
+  color: white;
+  transition: all 0.3s ease;
+}
