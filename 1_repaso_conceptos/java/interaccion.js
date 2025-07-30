@@ -1,9 +1,35 @@
-let imagen = document.querySelector(".imagen-principal")
-let boton1 = document.querySelector(".boton-1")
-let boton2 = document.querySelector(".boton-2")
-let boton3 = document.querySelector(".boton-3")
+let imagen = document.querySelector(".imagen");
+let botones = document.querySelectorAll(".botones button");
+let efectoActivo = null;
 
-boton1.addEventListener('click', boton1Funcion)
-function FlorFuncion(){
-   
+botones.forEach(boton => {
+  boton.addEventListener("click", () => {
+    const efecto = boton.classList[0]; 
+
+    imagen.classList.remove("blanco-y-negro", "desenfocar", "zoom-rotar");
+
+    if (efectoActivo === efecto) {
+      efectoActivo = null;
+      quitarEstiloActivo();
+      return;
+    }
+
+    if (efecto === "boton1") {
+      imagen.classList.add("blanco-y-negro");
+    } else if (efecto === "boton2") {
+      imagen.classList.add("desenfocar");
+    } else if (efecto === "boton3") {
+      imagen.classList.add("zoom-rotar");
+    }
+
+    efectoActivo = efecto;
+    marcarBotonActivo(boton);
+  });
+});
+function quitarEstiloActivo() {
+  botones.forEach(b => b.classList.remove("activo"));
+}
+function marcarBotonActivo(botonActivo) {
+  quitarEstiloActivo();
+  botonActivo.classList.add("activo");
 }
