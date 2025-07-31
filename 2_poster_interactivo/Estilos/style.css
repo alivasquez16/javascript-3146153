@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pantalla{
+    position: relative;
+    width: 750px;
+    height: 500px;
+    margin: auto;
+}
+.pantalla .fondo{
+    width: 100%;
+}
+.bloque1{
+    position: absolute;
+    top: 45%;
+    left: 16%;
+}
+.bloque2{
+    position: absolute;
+    top: 33%;
+    right: 30%;
+}
+.moneda1{
+    position: absolute;
+    top: 34%;
+    left: 21%;
+}
+.moneda2{
+    position: absolute;
+    top: 34%;
+    left: 30%;
+}
+.moneda3{
+    position: absolute;
+    bottom: 35%;
+    right: 4%;
+}
+.corazon{
+    position: absolute;
+    top: 21%;
+    right: 36%;
+}
