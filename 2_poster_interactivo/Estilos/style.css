@@ -16,11 +16,13 @@
     position: absolute;
     top: 45%;
     left: 16%;
+    animation: movimiento 2s ease-in-out infinite;
 }
 .bloque2{
     position: absolute;
     top: 33%;
     right: 30%;
+    animation: movimiento-2 1s ease-in-out infinite;
 }
 .moneda1{
     position: absolute;
@@ -50,10 +52,22 @@
     animation: salto 2s ease forwards;
 
 }
+
 @keyframes salto {
     0%{transform: translateY(0); opacity: 1;}
     30%{transform: translateY(-60px) scaleX(-1);}
     100%{transform: translateY(0px); opacity: 0;}
+}
+
+@keyframes movimiento{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(15px);}
+    100%{transform: translateY(0);}
+}
+@keyframes movimiento-2{
+    0%{transform: translateX(0);}
+    50%{transform: translateX(8px);}
+    100%{transform: translateX(0);}
 }
 .hud {
 position: absolute;
