@@ -1,0 +1,72 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.fondo{
+    width: 100%;
+    
+}
+.cementerio{
+    width: 25%;
+    position: relative;
+}
+.zombie {
+    width: 18%;
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    animation: pasosZombie 2s steps(3) infinite;
+}
+.titulo{
+    font-weight: bolder;
+    font-size: 11vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgba(243, 0, 0, 0.863);
+    position: absolute;
+    left: 0.5%;
+    top: 15%;
+    animation: titileo 3s infinite alternate;
+}
+.relampago{
+  position: fixed;
+  inset: 0;              
+  background: white;     
+  opacity: 0;           
+  pointer-events: none; 
+  z-index: 9999;         
+}
+.is-flashing {
+  animation: flash 3s ease-in-out;
+}
+
+@keyframes flash {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  20% { opacity: 0; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes pasosZombie {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-10vw); 
+    }
+}
+@keyframes titileo {
+    0% {
+        opacity: 1;
+        text-shadow: 0 0 20px red, 0 0 40px darkred;
+    }
+    50% {
+        opacity: 0.6;
+        text-shadow: 0 0 10px red, 0 0 20px darkred;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 20px red, 0 0 40px darkred;
+    }
+}
+
