@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster Interactivo</title>
+    <link rel="stylesheet" href="./Estilos/style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <img class="cementerio" src="./Assets/Cementerio.jpg" alt="">
+        <img class="zombie" src="./Assets/zombie.png" alt="">
+        <h1 class="titulo">THRILLER</h1>
+       <!--  <audio id="caminar" src="./Assets/zombie.mp3" controls></audio> -->
+
+        <audio id="caminar" autoplay>
+            <source src="./Assets/zombie.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+
+
+        <audio id="salto" src="./Assets/Salto.mp3"></audio>
+        <div class="relampago" aria-hidden="true">
+            <audio id="trueno" autoplay src="./Assets/Trueno.mp3"></audio>
+
+        </div>
+
+    </div>
+    <script src="./Javascript/interaccion.js"></script>
+</body>
+
+</html>
