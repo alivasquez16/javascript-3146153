@@ -9,10 +9,8 @@ document.addEventListener('keydown', function(event) {
 
   if (event.code === 'Space') {
     relampago.classList.add('is-flashing');
-    
     trueno.currentTime = 0;
     trueno.play();
-    caminar.play();
 
     setTimeout(function(){
       relampago.classList.remove('is-flashing');
@@ -29,14 +27,28 @@ document.addEventListener('keydown', function(event) {
     }, 600);
   }
 
-  if (event.code === 'space'){
-    zombie.classList.add('pasosZombie');
-  }
-  zombie.addEventListener("click")
 }); 
 
+//Funcion boton galeria
 
+const prev = document.querySelector(".prev")
+const nex = document.querySelector (".next")
+const escena1 = document.querySelector(".escena1")
+const escena2 = document.querySelector (".escena2")
+const escena3 = document.querySelector(".escena3")
+let i = 1
   
+nex.addEventListener("click", function() {
+  if (i === 1){
+    escena1.classList.add("d-none")
+    escena2.classList.remove("d-none")
+    i++
+  }else if( i === 2){
+    escena2.classList.add("d-none")
+    escena3.classList.add("d-none")
+    i++
+  }
+})
 
 
 

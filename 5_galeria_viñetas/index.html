@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <div class="contenedor">
+    <div class="comic">
+     <div class="contenedor escena1">
         <img class="cementerio" src="./Assets/Cementerio.jpg" alt="">
         <img class="zombie" src="./Assets/zombie.png" alt="">
         <h1 class="titulo">THRILLER</h1>
@@ -27,6 +28,48 @@
 
         </div>
 
+     </div>
+     <div class="contenedor d-none escena2">
+        <img class="cementerio2" src="./Assets/Cementerio.jpg" alt="">
+        <img class="zombie" src="./Assets/zombie.png" alt="">
+        <h1 class="titulo">THRILLER</h1>
+       <!--  <audio id="caminar" src="./Assets/zombie.mp3" controls></audio> -->
+
+        <audio id="caminar" autoplay>
+            <source src="./Assets/zombie.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+
+
+        <audio id="salto" src="./Assets/Salto.mp3"></audio>
+        <div class="relampago" aria-hidden="true">
+            <audio id="trueno" autoplay src="./Assets/Trueno.mp3"></audio>
+        </div>
+
+     </div>
+     <div class="contenedor d-none escena3">
+        <img class="cementerio3" src="./Assets/Cementerio.jpg" alt="">
+        <img class="zombie" src="./Assets/zombie.png" alt="">
+        <h1 class="titulo">THRILLER</h1>
+       <!--  <audio id="caminar" src="./Assets/zombie.mp3" controls></audio> -->
+
+        <audio id="caminar" autoplay>
+            <source src="./Assets/zombie.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+
+
+        <audio id="salto" src="./Assets/Salto.mp3"></audio>
+        <div class="relampago" aria-hidden="true">
+            <audio id="trueno" autoplay src="./Assets/Trueno.mp3"></audio>
+
+        </div>
+
+     </div>
+    </div>
+    <div class="navegacion">
+        <button class="prev"> Anterior </button>
+        <button class="next"> Siguiente </button>
     </div>
     <script src="./Javascript/interaccion.js"></script>
 </body>

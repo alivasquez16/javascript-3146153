@@ -5,7 +5,16 @@
 body {
   background-color: black;               
 }
-.contenedor {
+.d-none{
+  display: none!important;
+}
+.navegacion{
+  display: flex;
+  justify-content: center;
+  margin: 20ox 0;
+  gap: 20px;
+}
+.contenedor{
   width: 100%;
   position: relative; 
   height: 100vh;
@@ -13,9 +22,19 @@ body {
   justify-content: center; 
   align-items: center;  
 }
-.cementerio{
+.cementerio {
     width: 22%;
     position: relative;
+}
+.cementerio2{
+    width: 22%;
+    position: relative;
+    filter: invert(1);
+}
+.cementerio3{
+    width: 22%;
+    position: relative;
+    filter: hue-rotate(45deg);
 }
 .zombie {
     width: 15%;
@@ -84,4 +103,3 @@ body {
         text-shadow: 0 0 20px rgba(255, 0, 0, 0.404), 0 0 40px darkred;
     }
 }
-
