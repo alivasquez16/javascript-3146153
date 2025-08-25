@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,7 +14,7 @@
         <img class="cementerio" src="./Assets/Cementerio.jpg" alt="">
         <img class="zombie" src="./Assets/zombie.png" alt="">
         <h1 class="titulo">THRILLER</h1>
-       <!--  <audio id="caminar" src="./Assets/zombie.mp3" controls></audio> -->
+        <audio id="caminar" src="./Assets/zombie.mp3" controls></audio>
 
         <audio id="caminar" autoplay>
             <source src="./Assets/zombie.mp3" type="audio/mp3">
@@ -33,7 +33,7 @@
         <img class="cementerio2" src="./Assets/Cementerio.jpg" alt="">
         <img class="zombie" src="./Assets/zombie.png" alt="">
         <h1 class="titulo">THRILLER</h1>
-       <!--  <audio id="caminar" src="./Assets/zombie.mp3" controls></audio> -->
+        <audio id="caminar" src="./Assets/zombie.mp3" controls></audio>
 
         <audio id="caminar" autoplay>
             <source src="./Assets/zombie.mp3" type="audio/mp3">
@@ -51,7 +51,7 @@
         <img class="cementerio3" src="./Assets/Cementerio.jpg" alt="">
         <img class="zombie" src="./Assets/zombie.png" alt="">
         <h1 class="titulo">THRILLER</h1>
-       <!--  <audio id="caminar" src="./Assets/zombie.mp3" controls></audio> -->
+        <audio id="caminar" src="./Assets/zombie.mp3" controls></audio>
 
         <audio id="caminar" autoplay>
             <source src="./Assets/zombie.mp3" type="audio/mp3">
@@ -74,4 +74,72 @@
     <script src="./Javascript/interaccion.js"></script>
 </body>
 
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Estilos/style.css">
+</head>
+<body>
+      <div class="carrusel">
+    <!-- Botón anterior -->
+    <button class="btn anterior">&#10094;</button>
+
+    <!-- Escenas -->
+    <div class="escenas">
+      <!-- Escena 1 -->
+      <div class="escena activa">
+        <div class="pantalla">
+          <div class="hud">
+            <div class="hud-item">
+              <img src="./assets/Moneda.png" alt="Moneda">
+              <span id="contador-monedas">0</span>
+            </div>
+            <div class="hud-item">
+              <img src="./assets/Corazón.png" alt="Corazón">
+              <span id="contador-corazones">0</span>
+            </div>
+          </div>
+          <img class="fondo" src="./assets/Fondo.png" alt="">
+          <img class="bloque1" src="./assets/Bloques 5und.png" alt="">
+          <img class="bloque2" src="./assets/Bloques 3und.png" alt="">
+          <img class="coin moneda1" src="./assets/Moneda.png" alt="">
+          <img class="coin moneda2" src="./assets/Moneda2.png" alt="">
+          <img class="coin moneda3" src="./assets/Moneda3.png" alt="">
+          <img class="corazon" src="./assets/Corazón.png" alt="">
+        </div>
+      </div>
+
+      <!-- Escena 2  -->
+      <div class="escena">
+        <div class="pantalla">
+
+        </div>
+      </div>
+
+      <!-- Escena 3 -->
+      <div class="escena">
+        <div class="pantalla">
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón siguiente -->
+    <button class="btn siguiente">&#10095;</button>
+  </div>
+
+  <!-- Miniaturas -->
+  <div class="miniaturas">
+    <img src="./assets/Fondo.png" data-index="0" alt="Miniatura 1">
+    <img src="./assets/fondo3.png" data-index="1" alt="Miniatura 2">
+    <img src="./assets/fondo4.png" data-index="2" alt="Miniatura 3">
+  </div>
+
+  <script src="./Javascript/interaccion.js"></script>
+</body>
 </html>

@@ -1,4 +1,4 @@
-let relampago = document.querySelector('.relampago');
+/* let relampago = document.querySelector('.relampago');
 let zombie = document.querySelector('.zombie');
 const trueno = document.querySelector('#trueno');
 const caminar = document.querySelector('#caminar');
@@ -48,9 +48,45 @@ nex.addEventListener("click", function() {
     escena3.classList.add("d-none")
     i++
   }
+}) */
+
+//Galería 
+
+const escenas = document.querySelectorAll('.escena')
+const btnAnterior = document.querySelector('.anterior')
+const btnSiguiente = document.querySelector('.siguiente')
+const miniaturas = document.querySelectorAll('.miniaturas img')
+let indice = 0 
+
+//console.log(escenas)
+//console.log(escenas[1])
+
+function mostrarEscena(i){
+  //console.log(escenas[i])
+
+  for (let j = 0; j < escenas.length; j++) {
+    escenas[j].classList.remove("activa")
+  }
+
+  escenas[i].classList.add("activa")
+  indice = i
+}
+
+//Botón siguiente
+
+btnSiguiente.addEventListener("click", function(){
+  indice = indice + 1
+  if(indice >= escenas.length){
+    indice = 0  //Para que vuelva a la primera escena
+  }
+  mostrarEscena(indice)
 })
 
-
-
-
-
+//Botón Anterior
+btnAnterior.addEventListener("click", function(){
+  indice = indice - 1
+  if(indice < 0){
+    indice = escenas.length - 1 //Para que vaya a la última escena
+  }
+  mostrarEscena(indice)
+})
