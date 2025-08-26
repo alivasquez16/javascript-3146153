@@ -89,4 +89,11 @@ btnAnterior.addEventListener("click", function(){
     indice = escenas.length - 1 //Para que vaya a la última escena
   }
   mostrarEscena(indice)
-})
+}) 
+
+//Miniaturas 
+miniaturas.forEach((miniatura, i) => {
+  miniatura.addEventListener("click", function(){
+    mostrarEscena(i)
+  })
+});

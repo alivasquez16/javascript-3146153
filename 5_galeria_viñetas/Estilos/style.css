@@ -115,11 +115,11 @@ body {
 .pantalla{
     position: relative;
     width: 750px;
-    height:500px;
+    height:480px;
     margin: auto;
 }
 
-.pantalla .fondo{
+.pantalla .fondo {
     width: 100%;
 }
 
