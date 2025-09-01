@@ -160,6 +160,46 @@ body {
     left: 58%;
     cursor: pointer;
 }
+.audio1 {
+    position: absolute;
+    top: 20%;
+    right: 11px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    width: 8%;
+    height: 32px;
+    font-size: 18px;
+}
+.audio2 {
+    position: absolute;
+    top: 2%;
+    right: 10px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    width: 8%;
+    height: 32px;
+    font-size: 18px;
+}
+.audio3 {
+    position: absolute;
+    top: 2%;
+    right: 10px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    width: 8%;
+    height: 32px;
+    font-size: 18px;
+}
+
 
 /* clase para asignar animación */
 .saltar{
