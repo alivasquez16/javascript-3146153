@@ -9,9 +9,9 @@ const comic = {
         {
           id: 1,
           nombreCap: "Saldo Actualizado",
-          miniatura: "./assets/capitulo1.jpeg",
+          miniatura: "./assets/capitulo1.png",
           video: "video/capitulo1.mp4",
-          descirpcion: "Zaya descubre que su saldo ha sido actualizado a NEGATIVO, quedando fuera del sistema. Pierde el acceso a comida, estudios y refugio, enfrentando por primera vez el vacío y la invisibilidad de ser una “olvidada” en Cárdena.",
+          descripcion: "Zaya descubre que su saldo ha sido actualizado a NEGATIVO, quedando fuera del sistema. Pierde el acceso a comida, estudios y refugio, enfrentando por primera vez el vacío y la invisibilidad de ser una “olvidada” en Cárdena.",
           Personajes: "Zaya (Protagonista)"
         },
         {

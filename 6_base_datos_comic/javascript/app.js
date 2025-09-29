@@ -1,6 +1,6 @@
 const tituloComic = document.querySelector(".titulo");
 const descripcionComic = document.querySelector(".parrafo");
-const imgComic = document.querySelector(".episodio-1 img .episodio-1");
+const imgComic = document.querySelector(".episodio-1 img");
 const listaCaps = document.querySelector(".contenedor-padre-de-episodios");
 
 //Mostrar informacion de la base de datos en la página 
@@ -18,8 +18,10 @@ comic.capitulos.forEach(capitulos => {
     div.classList.add('miniatura');
     div.classList.add('episodios-contenedor');
     div.innerHTML = `
+    <a href="./capitulo.html?id=${capitulos.id}">
     <img src="${capitulos.miniatura}" width = "230"  alt="">
     <p>${capitulos.nombreCap}</p>
+    </a>
     `
     listaCaps.appendChild(div);
 });

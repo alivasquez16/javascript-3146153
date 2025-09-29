@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color: rgb(0, 0, 0);
+    height: 180vh;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+}
+.primer-cap{
+    width: 50%;
+    height: 85%;
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #4d4d4d;
+    box-shadow:  17px 17px 45px #707070,
+             -17px -17px 45px #c4c4c4;
+}
+.boton-volver-comic{
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.5);
+    left: 27%;
+    top: 3%;
+    padding: 18px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.boton-volver-pagina-principal{
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.5);
+    right: 26%;
+    top: 3%;
+    height: 9%;
+    width: 4%;
+    padding: 18px;
+    font-size: 25px;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boton-inicio{
+    position: absolute;
+    top: 63%;
+    background-color: rgba(219, 219, 219, 0.705);
+    padding: 30px;
+    height: 18%;
+    width: 8%;
+    font-size: 32px;
+    color: #f5f5f5;
+    border-radius: 62px;
+    border: none;
+    cursor: pointer;
+}
+.seccion-2{
+    bottom: 20px;
+}
+.info-cap{
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    gap: 25vh;
+}
+.etiquetas{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.año{
+    color: #fff;
+}
+.etiquetas-2{
+    color:#fff;
+    font-family: sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.cuadro-rojo{
+    width: 25%;
+    padding: 10px;
+    background-color: #910000;
+    border-radius: 8px;
+}
+.dos{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.estrellas{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.ultima-etiqueta{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.estrellas-de-puntuacion{
+    width: 25%;
+}
+.nombre-y-descripcion h2, h1{
+    font-family: sans-serif;
+    color: #ad0000;
+}
+.nombre-y-descripcion{
+    font-family: sans-serif;
+    color: #fff;
+    padding-left: 23%;
+}
+.descripcion-cap{
+    text-align: justify;
+    width: 50%;
+}
+.boton-mas-cap{
+    width: 77%;
+    height: 12vh;
+    padding-top: 28px;
+    display: flex;
+    justify-content: end;
+    padding-bottom: 12px;
+    
+}
+.ultimo-boton{
+    background-color: #70707085;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.menu-volver-bottom{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid rgb(255, 255, 255);
+}
+.descarga{
+    width: 8%;
+    cursor: pointer;
+}
+.casa{
+    width: 4%;
+    cursor: pointer;
+}
+.favorito{
+    width: 4.5%;
+    cursor: pointer;
+}
