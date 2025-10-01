@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./Estilos/styleVideo.css">
+</head>
+
+<body>
+  <video id="cap" class="cap">
+    <source src="./Assets/Amy Winehouse - Back To Black.mp4" type="video/mp4">
+  </video>
+  <div class="contenedor-boton">
+    <button id="boton-pasusa-despausa" class="boton-pasusa-despausa">▶</button>
+  </div>
+  <button class="boton-volver-comic">←</button>
+
+  <script>
+
+    const botonVolver = document.querySelector('.boton-volver-comic'); //Busca en el documento HTML un elemento que tenga la clase boton-volver-comic y lo guarda en la constante botonVolver.
+    if (botonVolver) { //Verifica si el elemento fue encontrado. Si el botón existe, ejecuta el siguiente bloque de código.
+      botonVolver.addEventListener('click', () => { //Le agrega un "escuchador de eventos" al botón. Cuando el usuario haga clic sobre él, se ejecutará la función dentro de addEventListener.
+        const urlParams = new URLSearchParams(window.location.search); //Le agrega un "escuchador de eventos" al botón. Cuando el usuario haga clic sobre él, se ejecutará la función dentro de addEventListener. Si la URL es pagina.html?id=3, entonces urlParams podrá acceder a ese id.
+        const cap = urlParams.get('id') || '1'; //Si no existe (es null), se usará '1' como valor por defecto.
+        window.location.href = `capitulo.html?id=${cap}`; //Redirige al usuario a la página capitulo.html, pasándole el id como parámetro.
+      }); 
+    }
+
+    const botonVideo = document.querySelector('#boton-pasusa-despausa')
+    const video = document.querySelector('#cap')
+
+    /* Evento */
+    botonVideo.addEventListener('click', reproducirVideo)
+
+    /* Reproducir video */
+    function reproducirVideo() {
+      if (video.paused) {
+        video.play()
+        botonVideo.textContent = "⏸"
+      } else {
+        video.pause()
+        botonVideo.textContent = "▶"
+      }
+    }
+  </script>
+</body>
+</html>

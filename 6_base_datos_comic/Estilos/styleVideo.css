@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cap{
+    width: 62%;
+    position: relative;
+    border-radius: 5px;
+    background: #4d4d4d;
+    box-shadow:  17px 17px 45px #707070bb,
+                -17px -17px 45px #c4c4c494;
+}
+.boton-volver-comic{
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.5);
+    left: 21%;
+    top: 3%;
+    padding: 18px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.contenedor-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.boton-pasusa-despausa{
+    background-color: rgba(255, 255, 255, 0.801);
+    box-shadow: 0px 0px 20px #ffffffcc;
+    color: black;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    border: 0;
+    position: relative;
+    bottom: -15rem;
+    cursor: pointer;
+}

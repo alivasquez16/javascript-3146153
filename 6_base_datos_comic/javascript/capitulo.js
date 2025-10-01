@@ -18,7 +18,6 @@ container.innerHTML =/*  Guarda ese objeto en la variable capitulo */ `
         <div class="imagen">
             <img class="primer-cap" src="${capitulo.miniatura}" alt="">
             <button class="boton-volver-comic">←</button> 
-            <button class="boton-volver-pagina-principal">×</button>  
             <button class="boton-inicio">▶</button>
         </div>
         <div class="seccion-2">
@@ -56,4 +55,19 @@ container.innerHTML =/*  Guarda ese objeto en la variable capitulo */ `
                 <img class="casa" src="./Assets/icono-casa.png" alt="">
             </div>
         </div>
-    </div>`
+    </div>`;
+
+const botonVolver = document.querySelector('.boton-volver-comic');
+if (botonVolver) {
+  botonVolver.addEventListener('click', () => {
+   window.location.href = `index.html`
+  });
+}
+const botonInicio = document.querySelector('.boton-inicio');
+if (botonInicio) {
+  botonInicio.addEventListener('click', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const cap = urlParams.get('id') || '1';
+    window.location.href = `video.html?id=${cap}`;
+  });
+}
